@@ -1,54 +1,89 @@
 <!DOCTYPE html>
-<style>
-    .handle{
-        color:white;
-        text-decoration:none;
-        font-size:50px;
-        font-weight:bold;
-        /*background-color: black;*/
-        padding:5px 5px 5px 200px;
-        /*border-radius: 10px;
-        
-        
-        border-style:solid;
-        /*border-width: 5px;
-        border-color: black;
-        border-radius: 10px;*/
-        margin:1px;
-    }
-    .context{
-        color:white;
-        text-decoration:none;
+<head>
+    <style>
+        .handle{
+            color:white;
+            text-decoration:none;
+            font-size:50px;
+            font-weight:bold;
+            /*background-color: black;*/
+            padding:5px 5px 5px 200px;
+            /*border-radius: 10px;
+            
+            
+            border-style:solid;
+            /*border-width: 5px;
+            border-color: black;
+            border-radius: 10px;*/
+            margin:1px;
+        }
+        .context{
+            color:white;
+            text-decoration:none;
+            font-size: 25px;
+            padding:3px 5px 1px 200px ;
+            margin: 1px;
+        }
+        body {
+        background-color: black;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        height: 100vh;
+        font-family: '微軟正黑體';
+        }
+        .linkbutton {
+        color: rgb(179, 179, 252);
+        text-decoration: none;
         font-size: 25px;
-        padding:3px 5px 1px 200px ;
-        margin: 1px;
-    }
-    body {
-      background-color: black;
-      background-size: cover;
-      background-position: center;
-      margin: 0;
-      height: 100vh;
-      font-family: '微軟正黑體';
-    }
-    .linkbutton {
-      color: rgb(179, 179, 252);
-      text-decoration: none;
-      font-size: 25px;
-      margin:3px 5px 3px 200px ;
-      display: inline-block; 
-      /*cursor: pointer;*/
-      border-radius: 5px;
-      border-style: soild;
-      padding:1px 3px;
-      text-decoration: underline;
-    }
-    .linkbutton:hover{
-        color:black;
-        background-color:white;
-    }
+        margin:3px 5px 3px 200px ;
+        display: inline-block; 
+        /*cursor: pointer;*/
+        border-radius: 5px;
+        border-style: soild;
+        padding:1px 3px;
+        text-decoration: underline;
+        }
+        .linkbutton:hover{
+            color:black;
+            background-color:white;
+        }
+        
+        #fileContainer {/*密碼顯示檔案*/
+            display: none;
+            margin-top: 10px;
+        }
+        #passwordInput {
+            display: block;  
+            margin-left: 200px;  
+            /*width: 250px;  */
+           /* height: 35px;  */
+            font-size: 20px;   
+            border-radius: 5px; 
+            border: 1px solid white; 
+            
+            color: black;
+        }
+        #submitbutton {
+            
+            margin-left: 200px;  
+            /*width: 250px;  */
+           /* height: 35px;  */
+            font-size: 20px;   
+            border-radius: 5px; 
+            /*border: 1px solid white; 
+            
+            color: black;*/
+        }
+
+        #submitbutton:hover {
+            background-color: gray;
+            color: white;
+        }
     
-</style>
+        
+    </style>
+</head>
 <body>
     <img style="width:160px;height:160px;padding:5px 5px 5px 200px"src="headpicture.jpg">
 
@@ -83,10 +118,30 @@
         <a class="linkbutton" href="https://github.com/Jackis666">github</a><br>
         <a class="linkbutton " href="https://www.youtube.com/@52.73">Youtube</a><br>
         <a class="linkbutton" href="https://x.com/XiaoJieYoutuber">X(Twitter)</a>
-        
+    
+    
+    
+    <p class="handle">私人空間</p>
+    <input type="password" id="passwordInput" class="margin-left: 0;context" placeholder="輸入密碼">
+    <button onclick="checkPassword()" id="submitbutton" class="margin-left: 0;context">確認</button>
+    <div id="fileContainer">
+        <a class="context" href="國文報告.pptx" download>國文報告</a>
+    </div>
         
     
 
-    
+    <script>
+        function checkPassword() {
+            const correctPassword = "1111"; 
+            const inputPassword = document.getElementById("passwordInput").value;
+            const fileContainer = document.getElementById("fileContainer");
+
+            if (inputPassword === correctPassword) {
+                fileContainer.style.display = "block"; 
+            } else {
+                alert("密碼錯誤，請重試！");
+            }
+        }
+    </script>
 
 </body>
