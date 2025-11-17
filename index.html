@@ -1,60 +1,17 @@
 <!DOCTYPE html>
 <head>
-    <style>
-        .handle{
-            color:white;
-            text-decoration:none;
-            font-size:50px;
-            font-weight:bold;
-            /*background-color: black;*/
-            padding:5px 5px 5px 200px;
-            /*border-radius: 10px;
-            
-            
-            border-style:solid;
-            /*border-width: 5px;
-            border-color: black;
-            border-radius: 10px;*/
-            margin:1px;
-        }
-        .context{
-            color:white;
-            text-decoration:none;
-            font-size: 25px;
-            padding:3px 5px 1px 200px ;
-            margin: 1px;
-        }
-        body {
-        background-color: black;
-        background-size: cover;
-        background-position: center;
-        margin: 0;
-        height: 100vh;
-        font-family: '微軟正黑體';
-        }
-        .linkbutton {
-        color: rgb(179, 179, 252);
-        text-decoration: none;
-        font-size: 25px;
-        margin:3px 5px 3px 200px ;
-        display: inline-block; 
-        /*cursor: pointer;*/
-        border-radius: 5px;
-        border-style: soild;
-        padding:1px 3px;
-        text-decoration: underline;
-        }
-        .linkbutton:hover{
-            color:black;
-            background-color:white;
-        }
-        
     
-        
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img style="width:160px;height:160px;padding:5px 5px 5px 200px"src="headpicture.jpg">
+    <img style="width:160px;height:160px;padding:5px 5px 5px 200px"src="img\headpicture.jpg" id="homepage">
+    <p class="handle">郭丞傑</p>
+    <p class="context" style="color:rgb(179, 179, 252)">email:qqazwwsxeedcrrfvttgb@gmail.com</p>
+    <p class="context" style="color:aqua">學號:01457036</p>
+    <a class="linkbutton" style="font-size:15px" href="#pokemon">跳到我最喜歡的寶可夢</a>
 
     <p class="handle">About me</p>
         <p class="context">我超廢</p>
@@ -89,7 +46,54 @@
         <a class="linkbutton" href="https://codeforces.com/profile/Jackis666">codeforce</a><br>
         <a class="linkbutton" href="https://github.com/Jackis666">github</a><br>
         <a class="linkbutton " href="https://www.youtube.com/@52.73">Youtube</a><br>
-        <a class="linkbutton" href="https://x.com/XiaoJieYoutuber">X(Twitter)</a>
+        <a class="linkbutton" href="https://x.com/XiaoJieYoutuber">X(Twitter)</a><br>
+    <hr>
+    <img style="height: 160px; padding: 5px 5px 5px 200px;"src="img/eevee.png" id="pokemon">
+    <p class="handle">圖鑑版本</p>
+        <div class="context">
+            <ul>
+                <li>會從如蝴蝶結般的觸角把消除敵意的波動傳送進對手的體內。</li>
+                <li>搖曳著觸角跳著輕快舞蹈的樣子相當優雅，但招式卻會直搗對手要害。</li>
+                <li>從緞帶狀器官發出的氣可平息怒意。發生鬥爭時，牠會用此器官捲住當事者，讓現場在一瞬間歸於平靜。</li>
+            </ul>
+        </div>
+    <p class="handle">它的退化</p>
+        <div class="form">
+                <table>
+                    <tr>
+                        <th>名稱</th>
+                        <th>屬性</th>
+                        <th>身高</th>
+                        <th>體重</th>
+                        <th>分類</th>
+                        <th>特性</th>
+                        
+                        <th colspan="6">能力</th>
+                    </tr>
+                    <tr>
+                        <td>伊布</td>
+                        <td>一般</td>
+                        <td>0.3m</td>
+                        <td>6.5kg</td>
+                        <td>進化寶可夢</td>
+                        <td>逃跑&適應力</td>
+                        <td>HP:4</td>
+                        <td>攻擊:4</td>
+                        <td>防禦:3</td>
+                        <td>特攻:3</td>
+                        <td>特防:4</td>
+                        <td>速度:4</td>
+                    </tr>
+                </table>
+        </div>
+    
+    <p class="handle">原始圖鑑連結</p>
+        <a class="linkbutton" href="https://tw.portal-pokemon.com/play/pokedex/0700" target="_blank">點這裡</a>
+    <p><br></p>
+    <a class="linkbutton" style="font-size:15px" href="#homepage">回首頁</a>
+
+
+    
     
     
     
@@ -100,3 +104,4 @@
     
 
 </body>
+</html>

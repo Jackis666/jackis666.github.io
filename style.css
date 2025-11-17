@@ -1,0 +1,71 @@
+.handle{
+    color:white;
+    text-decoration:none;
+    font-size:50px;
+    font-weight:bold;
+    /*background-color: black;*/
+    padding:5px 5px 5px 200px;
+    /*border-radius: 10px;            
+    border-style:solid;
+    /*border-width: 5px;
+    border-color: black;
+    border-radius: 10px;*/
+    margin:1px;
+}
+.context{
+    color:white;
+    text-decoration:none;
+    font-size: 25px;
+    padding:3px 5px 1px 200px ;
+    margin: 1px;
+}
+body {
+background-color: black;
+background-size: cover;
+background-position: center;
+margin: 0;
+height: 100vh;
+font-family: '微軟正黑體';
+}
+.linkbutton {
+color: rgb(179, 179, 252);
+text-decoration: none;
+font-size: 25px;
+margin:3px 5px 3px 200px ;
+display: inline-block; 
+/*cursor: pointer;*/
+border-radius: 5px;
+border-style: soild;
+padding:1px 3px;
+text-decoration: underline;
+}
+.linkbutton:hover{
+    color:black;
+    background-color:white;
+}
+.form{
+    /*color:black;*/
+    text-decoration:none;
+    font-size: 25px;
+    padding:3px 5px 1px 200px ;
+    margin: 1px;
+    /*background-color: white;
+    border: 1px solid black;*/
+}
+.form th {
+    background-color: white;
+    color: black; 
+    padding: 8px 8px; 
+    border: 1px solid gray;
+    border-bottom: 2px solid black; 
+    border-radius: 5px;
+}
+.form td{
+
+    background-color: white;
+    color: black; 
+    padding: 8px 8px; 
+    border: 1px solid gray;
+    border-bottom: 2px solid black; 
+    border-radius: 5px;
+}
